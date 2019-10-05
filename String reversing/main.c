@@ -5,7 +5,7 @@
 void main()
 {
     char string[N];
-    int i,l=0,temp;             /*defining Variables*/
+    int i,l=0,temp,p;             /*defining Variables*/
     puts("Enter the String");
     scanf("%[^\n]",string);    /*Takes whole String*/
     do
@@ -21,7 +21,7 @@ void main()
         a[i]=a[l-1-i];
         a[l-1-i]=temp;
     }
-    for(i=0;i<N;i++)
-        printf("%c",string[i]);
+    for(p=0;p<N;p++)
+        printf("%c",string[p]);
 
 }
